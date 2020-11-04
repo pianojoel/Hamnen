@@ -1,0 +1,115 @@
+﻿<Window x:Class="Hamnen.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hamnen"
+        mc:Ignorable="d"
+        Title="Hamnen" Height="800" Width="1250" WindowState="Normal" >
+    <Grid Margin="0,6,0,-6" Background="DarkBlue">
+        <TextBox x:Name="harbourInfo" HorizontalAlignment="Left" Margin="368,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="232" Height="358" Visibility="Hidden"/>
+        <Label Content="Dag" HorizontalAlignment="Left" Margin="426,11,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.519,0.591" Visibility="Hidden"/>
+        <Label x:Name="dayCounterLabel" Content="Label" HorizontalAlignment="Left" Margin="472,10,0,0" VerticalAlignment="Top" Visibility="Hidden"/>
+        <DataGrid x:Name="gridInfo1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,10,0,0" >
+            <DataGrid.RowStyle>
+                <Style TargetType="DataGridRow">
+                    <Setter Property="Background" Value="{Binding ColorSet}"></Setter>
+                </Style>
+            </DataGrid.RowStyle>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="#Plats" Binding="{Binding spaceno, Mode=OneWay}" IsReadOnly="True" Width="50"></DataGridTextColumn>
+                <DataGridTextColumn Header="Båttyp" Binding="{Binding boatType, Mode=OneWay}" Width="70"></DataGridTextColumn>
+
+                <DataGridTextColumn Header="Nr" Binding="{Binding Id, Mode=OneWay}" Width ="70"></DataGridTextColumn>
+                <DataGridTextColumn Header="Vikt" Binding="{Binding Weight, Mode=OneWay}" Width="50"></DataGridTextColumn>
+                <DataGridTextColumn Header="Maxhast" Binding ="{Binding maxSpeed, Mode=OneWay}" Width="70"></DataGridTextColumn>
+                <DataGridTextColumn Header="Övrigt" Binding="{Binding Other, Mode=OneWay}" Width="120"></DataGridTextColumn>
+
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid x:Name="gridInfo2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="771,10,0,0" >
+            <DataGrid.RowStyle>
+                <Style TargetType="{x:Type DataGridRow}">
+                    <Setter Property="Background" Value="{Binding ColorSet}"/>
+                </Style>
+            </DataGrid.RowStyle>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="#Plats" Binding="{Binding spaceno, Mode=OneWay}" Width="50"/>
+                <DataGridTextColumn Header="Båttyp" Binding="{Binding boatType, Mode=OneWay}" Width="70"/>
+
+                <DataGridTextColumn Header="Nr" Binding="{Binding Id, Mode=OneWay}" Width ="70"/>
+                <DataGridTextColumn Header="Vikt" Binding="{Binding Weight, Mode=OneWay}" Width="50"/>
+                <DataGridTextColumn Header="Maxhast" Binding ="{Binding maxSpeed, Mode=OneWay}" Width="70"/>
+                <DataGridTextColumn Header="Övrigt" Binding="{Binding Other, Mode=OneWay}" Width="120"/>
+
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <Grid  HorizontalAlignment="Left" Width="310" Height="635"  VerticalAlignment="Top"  Background="LightBlue" Margin="447,10,0,0" >
+            <Label Content="Båtar i Hamnen:" HorizontalAlignment="Left" Margin="24,305,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.139,-0.363" Width="116" FontSize="14"/>
+            <Label Content="Lediga platser" HorizontalAlignment="Left" Margin="24,505,0,0" VerticalAlignment="Top" Width="102" FontSize="14"/>
+            <Label x:Name="totalBoats" Content="0" HorizontalAlignment="Left" Margin="249,303,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.311,0.298" FontSize="14"/>
+            <Label x:Name="numberOfFreeSpaces" Content="0" HorizontalAlignment="Left" Margin="250,505,0,0" VerticalAlignment="Top" FontSize="14"/>
+            <Label Content="Antal Avvisade Båtar:" HorizontalAlignment="Left" Margin="24,531,0,0" VerticalAlignment="Top" FontSize="14"/>
+            <Label x:Name="rejectedLabel" Content="0" HorizontalAlignment="Left" Margin="250,534,0,0" VerticalAlignment="Top" FontSize="14"/>
+            <Label Content="Antal Roddbåtar:" HorizontalAlignment="Left" Margin="24,325,0,0" VerticalAlignment="Top" FontSize="14"/>
+            <Label Content="Antal Motorbåtar:" HorizontalAlignment="Left" Margin="23,348,0,0" VerticalAlignment="Top" FontSize="14"/>
+            <Label Content="Antal Segelbåtar:" HorizontalAlignment="Left" Margin="22,374,0,0" VerticalAlignment="Top" FontSize="14"/>
+            <Label Content="Antal Katamaraner:" HorizontalAlignment="Left" Margin="22,398,0,0" VerticalAlignment="Top" FontSize="14"/>
+            <Label Content="Antal Lastfartyg:" HorizontalAlignment="Left" Margin="23,424,0,0" VerticalAlignment="Top" FontSize="14"/>
+            <Label x:Name="totalRowboats" Content="0" HorizontalAlignment="Left" Margin="249,325,0,0" VerticalAlignment="Top" FontSize="14"/>
+            <Label x:Name="totalMotorboats" HorizontalAlignment="Left" Margin="249,348,0,0" VerticalAlignment="Top" Height="26" Width="22" Content="0" FontSize="14"/>
+            <Label x:Name="totalSailboats" Content="0" HorizontalAlignment="Left" Margin="249,374,0,0" VerticalAlignment="Top" FontSize="14"/>
+            <Label x:Name="totalCatamarans" Content="0" HorizontalAlignment="Left" Margin="249,398,0,0" VerticalAlignment="Top" FontSize="14"/>
+            <Label x:Name="totalFreighters" Content="0" HorizontalAlignment="Left" Margin="249,424,0,0" VerticalAlignment="Top" FontSize="14"/>
+            <Label Content="Total Vikt (kg):" HorizontalAlignment="Left" Margin="24,450,0,0" VerticalAlignment="Top" FontSize="14" Width="102"/>
+            <Label x:Name="totalWeight" Content="0" HorizontalAlignment="Left" Margin="249,450,0,0" VerticalAlignment="Top" FontSize="14"/>
+            <Label Content="Genomsnittlig Maxhastighet (km/h):" HorizontalAlignment="Left" Margin="22,476,0,0" VerticalAlignment="Top" FontSize="14"/>
+            <Label x:Name="avgMaxSpeed" Content="0" HorizontalAlignment="Left" Margin="249,476,0,0" VerticalAlignment="Top" FontSize="14"/>
+            <Button Content="Nästa" HorizontalAlignment="Left" Margin="75,581,0,0" VerticalAlignment="Top" Click="Button_Click" Height="37" Width="144"/>
+            <DataGrid x:Name="IncomingGrid"  VerticalAlignment="Top" Margin="0,63,0,0" HorizontalAlignment="Center" Height="230">
+                <DataGrid.RowStyle>
+                    <Style TargetType="{x:Type DataGridRow}">
+                        <Setter Property="Background" Value="{Binding ColorSet}"/>
+                    </Style>
+                </DataGrid.RowStyle>
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Nr" Binding="{Binding Id, Mode=OneWay}" Width="60"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Båttyp" Binding="{Binding BoatType, Mode=OneWay}" Width="70"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Anvisad Plats" Binding="{Binding ToSpace, Mode=OneWay}" Width="*"></DataGridTextColumn>
+
+
+                </DataGrid.Columns>
+            </DataGrid>
+            <Label Content="Nya Båtar:" HorizontalAlignment="Left"  VerticalAlignment="Top" FontSize="16" Margin="106,10,0,0"/>
+            <ComboBox x:Name="newBoatsSelector" HorizontalAlignment="Left" Margin="86,41,0,0" VerticalAlignment="Top" Width="120">
+                <ComboBoxItem Content="1" ></ComboBoxItem>
+                <ComboBoxItem Content="2"></ComboBoxItem>
+                <ComboBoxItem Content="3"></ComboBoxItem>
+                <ComboBoxItem Content="4"></ComboBoxItem>
+                <ComboBoxItem Content="5" IsSelected="True"></ComboBoxItem>
+                <ComboBoxItem Content="6"></ComboBoxItem>
+                <ComboBoxItem Content="7"></ComboBoxItem>
+                <ComboBoxItem Content="8"></ComboBoxItem>
+                <ComboBoxItem Content="9"></ComboBoxItem>
+                <ComboBoxItem Content="10"></ComboBoxItem>
+                <ComboBoxItem Content="11"></ComboBoxItem>
+                <ComboBoxItem Content="12"></ComboBoxItem>
+                <ComboBoxItem Content="13"></ComboBoxItem>
+                <ComboBoxItem Content="14"></ComboBoxItem>
+                <ComboBoxItem Content="15"></ComboBoxItem>
+                <ComboBoxItem Content="16"></ComboBoxItem>
+                <ComboBoxItem Content="17"></ComboBoxItem>
+                <ComboBoxItem Content="18"></ComboBoxItem>
+                <ComboBoxItem Content="19"></ComboBoxItem>
+                <ComboBoxItem Content="20"></ComboBoxItem>
+            </ComboBox>
+
+
+
+
+        </Grid>
+
+    </Grid>
+</Window>

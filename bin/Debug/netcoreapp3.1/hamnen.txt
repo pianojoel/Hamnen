@@ -1,0 +1,64 @@
+0,False,False,4,S - VXO,11,4054,Segelbåt,Längd : 33
+1,False,False,4,S - VXO,11,4054,Segelbåt,Längd : 33
+2,False,False,3,M - GQO,22,421,Motorbåt,Hästkrafter : 649
+3,False,False,2,L - XAP,8,4255,Lastfartyg,Containrar : 444
+4,False,False,2,L - XAP,8,4255,Lastfartyg,Containrar : 444
+5,False,False,2,L - XAP,8,4255,Lastfartyg,Containrar : 444
+6,False,False,2,L - XAP,8,4255,Lastfartyg,Containrar : 444
+7,False,False,6,L - TMU,6,9124,Lastfartyg,Containrar : 177
+8,False,False,6,L - TMU,6,9124,Lastfartyg,Containrar : 177
+9,False,False,6,L - TMU,6,9124,Lastfartyg,Containrar : 177
+10,False,False,6,L - TMU,6,9124,Lastfartyg,Containrar : 177
+11,False,False,3,L - BWO,20,14126,Lastfartyg,Containrar : 48
+12,False,False,3,L - BWO,20,14126,Lastfartyg,Containrar : 48
+13,False,False,3,L - BWO,20,14126,Lastfartyg,Containrar : 48
+14,False,False,3,L - BWO,20,14126,Lastfartyg,Containrar : 48
+15,False,False,3,K - JZP,0,3171,Katamaran,Sängplatser : 4
+16,False,False,3,K - JZP,0,3171,Katamaran,Sängplatser : 4
+17,False,False,3,K - JZP,0,3171,Katamaran,Sängplatser : 4
+18
+19
+20,False,False,1,M - NEL,25,554,Motorbåt,Hästkrafter : 696
+21,False,False,1,M - XFA,58,947,Motorbåt,Hästkrafter : 599
+22,False,False,2,M - HKD,8,2859,Motorbåt,Hästkrafter : 687
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32,False,False,5,L - NQT,3,9035,Lastfartyg,Containrar : 253
+33,False,False,5,L - NQT,3,9035,Lastfartyg,Containrar : 253
+34,False,False,5,L - NQT,3,9035,Lastfartyg,Containrar : 253
+35,False,False,5,L - NQT,3,9035,Lastfartyg,Containrar : 253
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55,False,False,5,L - KFO,19,3716,Lastfartyg,Containrar : 213
+56,False,False,5,L - KFO,19,3716,Lastfartyg,Containrar : 213
+57,False,False,5,L - KFO,19,3716,Lastfartyg,Containrar : 213
+58,False,False,5,L - KFO,19,3716,Lastfartyg,Containrar : 213
+59,False,False,5,L - QSM,14,10945,Lastfartyg,Containrar : 199
+60,False,False,5,L - QSM,14,10945,Lastfartyg,Containrar : 199
+61,False,False,5,L - QSM,14,10945,Lastfartyg,Containrar : 199
+62,False,False,5,L - QSM,14,10945,Lastfartyg,Containrar : 199
+63,False,False,3,M - GCW,9,2642,Motorbåt,Hästkrafter : 285
