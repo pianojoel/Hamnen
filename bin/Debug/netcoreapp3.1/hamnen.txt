@@ -1,64 +1,65 @@
-0,False,False,4,S - VXO,11,4054,Segelbåt,Längd : 33
-1,False,False,4,S - VXO,11,4054,Segelbåt,Längd : 33
-2,False,False,3,M - GQO,22,421,Motorbåt,Hästkrafter : 649
-3,False,False,2,L - XAP,8,4255,Lastfartyg,Containrar : 444
-4,False,False,2,L - XAP,8,4255,Lastfartyg,Containrar : 444
-5,False,False,2,L - XAP,8,4255,Lastfartyg,Containrar : 444
-6,False,False,2,L - XAP,8,4255,Lastfartyg,Containrar : 444
-7,False,False,6,L - TMU,6,9124,Lastfartyg,Containrar : 177
-8,False,False,6,L - TMU,6,9124,Lastfartyg,Containrar : 177
-9,False,False,6,L - TMU,6,9124,Lastfartyg,Containrar : 177
-10,False,False,6,L - TMU,6,9124,Lastfartyg,Containrar : 177
-11,False,False,3,L - BWO,20,14126,Lastfartyg,Containrar : 48
-12,False,False,3,L - BWO,20,14126,Lastfartyg,Containrar : 48
-13,False,False,3,L - BWO,20,14126,Lastfartyg,Containrar : 48
-14,False,False,3,L - BWO,20,14126,Lastfartyg,Containrar : 48
-15,False,False,3,K - JZP,0,3171,Katamaran,Sängplatser : 4
-16,False,False,3,K - JZP,0,3171,Katamaran,Sängplatser : 4
-17,False,False,3,K - JZP,0,3171,Katamaran,Sängplatser : 4
-18
-19
-20,False,False,1,M - NEL,25,554,Motorbåt,Hästkrafter : 696
-21,False,False,1,M - XFA,58,947,Motorbåt,Hästkrafter : 599
-22,False,False,2,M - HKD,8,2859,Motorbåt,Hästkrafter : 687
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32,False,False,5,L - NQT,3,9035,Lastfartyg,Containrar : 253
-33,False,False,5,L - NQT,3,9035,Lastfartyg,Containrar : 253
-34,False,False,5,L - NQT,3,9035,Lastfartyg,Containrar : 253
-35,False,False,5,L - NQT,3,9035,Lastfartyg,Containrar : 253
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
+0,False,False,1,M - UJA,19,1371,Motorbåt,Hästkrafter : 535
+1,False,False,3,M - MNS,4,2799,Motorbåt,Hästkrafter : 100
+2,False,False,1,M - IIT,19,2239,Motorbåt,Hästkrafter : 460
+3,False,False,1,L - BFP,8,16066,Lastfartyg,Containrar : 490
+4,False,False,1,L - BFP,8,16066,Lastfartyg,Containrar : 490
+5,False,False,1,L - BFP,8,16066,Lastfartyg,Containrar : 490
+6,False,False,1,L - BFP,8,16066,Lastfartyg,Containrar : 490
+7,False,False,3,K - PCL,2,2466,Katamaran,Sängplatser : 2
+8,False,False,3,K - PCL,2,2466,Katamaran,Sängplatser : 2
+9,False,False,3,K - PCL,2,2466,Katamaran,Sängplatser : 2
+10,False,False,4,S - PYT,5,2270,Segelbåt,Längd : 11
+11,False,False,4,S - PYT,5,2270,Segelbåt,Längd : 11
+12
+13,False,False,1,K - VZH,8,7555,Katamaran,Sängplatser : 1
+14,False,False,1,K - VZH,8,7555,Katamaran,Sängplatser : 1
+15,False,False,1,K - VZH,8,7555,Katamaran,Sängplatser : 1
+16,False,False,1,K - IIY,6,6242,Katamaran,Sängplatser : 4
+17,False,False,1,K - IIY,6,6242,Katamaran,Sängplatser : 4
+18,False,False,1,K - IIY,6,6242,Katamaran,Sängplatser : 4
+19,False,False,5,L - DJW,5,15620,Lastfartyg,Containrar : 159
+20,False,False,5,L - DJW,5,15620,Lastfartyg,Containrar : 159
+21,False,False,5,L - DJW,5,15620,Lastfartyg,Containrar : 159
+22,False,False,5,L - DJW,5,15620,Lastfartyg,Containrar : 159
+23,False,False,3,S - LOD,1,1346,Segelbåt,Längd : 23
+24,False,False,3,S - LOD,1,1346,Segelbåt,Längd : 23
+25,False,False,2,K - NPK,7,5932,Katamaran,Sängplatser : 2
+26,False,False,2,K - NPK,7,5932,Katamaran,Sängplatser : 2
+27,False,False,2,K - NPK,7,5932,Katamaran,Sängplatser : 2
+28,False,False,2,K - WPS,8,4210,Katamaran,Sängplatser : 3
+29,False,False,2,K - WPS,8,4210,Katamaran,Sängplatser : 3
+30,False,False,2,K - WPS,8,4210,Katamaran,Sängplatser : 3
+31,False,False,1,R - BFR,2,266,Roddbåt,Max passagerare : 5
+31,False,False,1,R - SFN,1,274,Roddbåt,Max passagerare : 6
+32,False,False,3,L - ZSA,18,12938,Lastfartyg,Containrar : 238
+33,False,False,3,L - ZSA,18,12938,Lastfartyg,Containrar : 238
+34,False,False,3,L - ZSA,18,12938,Lastfartyg,Containrar : 238
+35,False,False,3,L - ZSA,18,12938,Lastfartyg,Containrar : 238
+36,False,False,4,L - GLN,20,14948,Lastfartyg,Containrar : 473
+37,False,False,4,L - GLN,20,14948,Lastfartyg,Containrar : 473
+38,False,False,4,L - GLN,20,14948,Lastfartyg,Containrar : 473
+39,False,False,4,L - GLN,20,14948,Lastfartyg,Containrar : 473
+40,False,False,2,M - QZO,48,2844,Motorbåt,Hästkrafter : 559
+41,False,False,2,L - PTM,20,16693,Lastfartyg,Containrar : 338
+42,False,False,2,L - PTM,20,16693,Lastfartyg,Containrar : 338
+43,False,False,2,L - PTM,20,16693,Lastfartyg,Containrar : 338
+44,False,False,2,L - PTM,20,16693,Lastfartyg,Containrar : 338
+45,False,False,3,K - CIP,6,2387,Katamaran,Sängplatser : 4
+46,False,False,3,K - CIP,6,2387,Katamaran,Sängplatser : 4
+47,False,False,3,K - CIP,6,2387,Katamaran,Sängplatser : 4
 48
-49
-50
-51
-52
-53
-54
-55,False,False,5,L - KFO,19,3716,Lastfartyg,Containrar : 213
-56,False,False,5,L - KFO,19,3716,Lastfartyg,Containrar : 213
-57,False,False,5,L - KFO,19,3716,Lastfartyg,Containrar : 213
-58,False,False,5,L - KFO,19,3716,Lastfartyg,Containrar : 213
-59,False,False,5,L - QSM,14,10945,Lastfartyg,Containrar : 199
-60,False,False,5,L - QSM,14,10945,Lastfartyg,Containrar : 199
-61,False,False,5,L - QSM,14,10945,Lastfartyg,Containrar : 199
-62,False,False,5,L - QSM,14,10945,Lastfartyg,Containrar : 199
-63,False,False,3,M - GCW,9,2642,Motorbåt,Hästkrafter : 285
+49,False,False,3,S - WJV,6,4162,Segelbåt,Längd : 11
+50,False,False,3,S - WJV,6,4162,Segelbåt,Längd : 11
+51,False,False,2,L - ILU,20,5803,Lastfartyg,Containrar : 122
+52,False,False,2,L - ILU,20,5803,Lastfartyg,Containrar : 122
+53,False,False,2,L - ILU,20,5803,Lastfartyg,Containrar : 122
+54,False,False,2,L - ILU,20,5803,Lastfartyg,Containrar : 122
+55,False,False,2,L - KYZ,11,11117,Lastfartyg,Containrar : 464
+56,False,False,2,L - KYZ,11,11117,Lastfartyg,Containrar : 464
+57,False,False,2,L - KYZ,11,11117,Lastfartyg,Containrar : 464
+58,False,False,2,L - KYZ,11,11117,Lastfartyg,Containrar : 464
+59,False,False,6,L - CDC,10,5822,Lastfartyg,Containrar : 316
+60,False,False,6,L - CDC,10,5822,Lastfartyg,Containrar : 316
+61,False,False,6,L - CDC,10,5822,Lastfartyg,Containrar : 316
+62,False,False,6,L - CDC,10,5822,Lastfartyg,Containrar : 316
+63

@@ -166,37 +166,38 @@ namespace Hamnen
             }
                     
         }
-        static List<Space> findSpace(int size)
+        static List<Space> FindSpace(int size)//<----Algorithm is here
         {
-            List<List<Space>> freeSpaces = new List<List<Space>>();
-            List<Space> freeSpace = new List<Space>();
-            List<int> luckor = new List<int>();
+            List<List<Space>> freeSpaces = new List<List<Space>>(); //Create a list of available spaces
+            List<Space> freeSpace = new List<Space>(); // Fill it with these
+            
+            // Iterate over harbour
             for(int i = 0; i <= harbour.Count - size; i++)
             {
-                freeSpace = harbour.GetRange(i, size);
+                freeSpace = harbour.GetRange(i, size); //Check each position if it is free
                 if(freeSpace.All(s => s.isFree))
                 {
                     List<Space> tmpList = new List<Space>();
                     freeSpace.ForEach(s => tmpList.Add(s));
                     
-                    
+                    //Pad with adjacent free spaces (so that we can order them by size and find the best fit)
                     int pos = i;
-                    if (i < 32)
+                    if (i < 32) // for harbour 1 (left)
                     {
                         while (pos + size < 32 && harbour[pos + size].isFree)
                         {
-                            tmpList.Add(harbour[pos + size]);
+                            tmpList.Add(harbour[pos + size]); //Add free spaces with higher number until non-free space encountered
                             pos++;
                         }
                         pos = i;
 
                         while (pos - 1 >= 0 && harbour[pos - 1].isFree)
                         {
-                            tmpList.Add(harbour[pos - 1]);
+                            tmpList.Add(harbour[pos - 1]); //Add free spaces with lower number until non-free space encountered
                             pos--;
                         }
                     }
-                    else
+                    else //do the same for for harbour 2
                     {
                         while (pos + size < 64 && harbour[pos + size].isFree)
                         {
@@ -221,17 +222,17 @@ namespace Hamnen
             try
             {
                 return freeSpaces
-                .Where(fs => !(fs.Any(s => s.Number == 31) && fs.Any(s => s.Number == 32)))
-                .OrderBy(fs => fs.Count())
-                .First()
-                .Take(size)
+                .Where(fs => !(fs.Any(s => s.Number == 31) && fs.Any(s => s.Number == 32))) //Exclude results crossing harbour 1 and 2 limit
+                .OrderBy(fs => fs.Count()) //Order by size
+                .First() // Should be the best fit
+                .Take(size) //Now down to one list, remove padding and good to go
                 .ToList();
             }
             catch
             {
                 return freeSpace;
             }
-        }
+        } 
 
         static List<Boat> generateIncoming(int numberOfBoats, Random rnd)
         {
@@ -500,9 +501,9 @@ namespace Hamnen
                     {
                         
 
-                        if (findSpace(1).Count() > 0)
+                        if (FindSpace(1).Count() > 0)
                         {
-                            var activeSpace = findSpace(1)[0];
+                            var activeSpace = FindSpace(1)[0];
 
                             activeSpace.isFree = false;
                             activeSpace.IsHalfFull = true;
@@ -538,7 +539,7 @@ namespace Hamnen
                 else
                 { //Now check other boat types
 
-                    var freeSpace = findSpace(boat.Size); //Call the spacefinding method
+                    var freeSpace = FindSpace(boat.Size); //Call the spacefinding method
                     if (freeSpace.Count == 0) //Reject if no space found
                     {
                         IncomingGrid.Items.Add(new
